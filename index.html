@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Singh = Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,     wght@0,100;0,200;0,300;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+       
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 10px 50px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .home-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .home-section>div {
+            width: 40%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .about-section {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .about-section h1 {
+            font-size: 1.6rem;
+            margin-top: 30px;
+        }
+
+        .about-section .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 5px 0;
+            display: flex;
+        }
+
+        .vertical-title{
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        .vertical-desc{
+            font-size: 1.6rem;
+            color: #fff;
+        }
+
+        .about-section .vertical {
+            height: 50px;
+            width: 2px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .services-section{
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+            
+        }
+        .services-section h1 {
+            text-align: left;
+            font-size: 1.6rem;
+        }
+        .services-section .box {
+            width: 80vw; 
+            background: white; 
+            height: 2px;
+            margin: 5px;
+        }
+
+       .services-section .service{
+        margin: 25px;
+       }
+       
+       .skill-section{
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .skill-section h1 {
+            text-align: left;
+            font-size: 1.6rem;
+        }
+
+        .skill-section .box {
+            width: 80vw; 
+            background: white; 
+            height: 2px;
+            margin: 5px;
+        }
+
+       .skill-section .skill{
+        margin: 30px;
+       }
+
+        .skill-section .btn{
+            padding: 12px;
+            background: #060241;
+            color: white;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .project-section{
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .project-section h1 {
+            text-align: left;
+            font-size: 1.6rem;
+        }
+
+        .project-section .box {
+            width: 80vw;
+            background: white; 
+            height: 2px;
+            margin: 5px;
+        }
+
+        .project{
+            margin: 30px;
+        }
+
+        .contact-section{
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+        .contact-section h1 {
+            text-align: left;
+            font-size: 1.6rem;
+        }
+
+        .contact-section .box {
+            padding-bottom: 5;
+            width: 80vw;
+            background: white;
+            margin: 5px; 
+            height: 2px;
+        }
+
+        .contact-section .contact{
+            text-align: left;
+            padding-left: 4%;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-section .address{
+            padding-left: 4%;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 50px;
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 50px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        footer{
+            background-color: rgb(32, 32, 56);
+            height: 150px;
+           
+        }
+
+        .footer{
+            display: flex;
+            padding: 1px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer >div{
+            width: 223px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+            margin-bottom: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+            <nav>
+            <div class="left">Happy's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#skill-section">Skills</a></li>
+                <li><a href="#project-section">Projects</a></li>
+                <li><a href="#contact-section">Contacts</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home-section" class="home-section">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Happy Singh</span>
+                <div> and I am a Software Engineer Student</div>
+                <div>Backend Developer & Frontend Developer</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Happy Singh RESUME.docx" target="blank">
+                    <button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/Happy7309/Singh85" target="blank">
+                    <button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+        <section class="about-section" id="about-section">
+            <h1>ABOUT ME</h1>
+            <span class="text-grey">What I have done so far,
+                I’m a passionate and results-driven software engineering student with a strong foundation in Java, Data Structures
+                & Algorithms, MySQL, Web Development, and App Development. Having completed my BCA from VBSPU and currently pursuing 
+                an MCA at Galgotias University, I’m committed to growing my technical expertise and delivering scalable, high-quality solutions.
+            </span>
+            <h1>Educational Background</h1>
+            <div class="box"> 
+                <div class="vertical">
+                    <div class="vertical-title">
+                       Highschool - (2018-2019)
+                    </div>
+                    <div class="vertical-desc">
+                        I have done Highschool in 2019 from S.G.S.I.C. Ramnagar Vidhamauwa Mariahu Jaunpur Uttar Pradesh.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Intermediate - (2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        I have done Intermediate in 2021 from S.G.S.I.C. Ramnagar Vidhamauwa Mariahu Jaunpur Uttar Pradesh.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        B.C.A. - (2021-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I have done my graduation in 2024 from VBSPU Jaunpur Uttar Pradesh 222003.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        M.C.A. - (2024-2026)
+                    </div>
+                    <div class="vertical-desc">
+                        I have done my post-graduation (MCA) from Galgotias University Greater Noida Guatam Buddha Nagar.
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section class="services-section" id="services-section">
+            <h1>SERVICES</h1>
+            <div class="box"></div>
+                <div class="service">
+                    Frontend Development: HTML, CSS & JavaScript Development, Responsive Web Design.
+                </div>
+                <div class="service">
+                    Backend Development: Java & DSA, Android Development. 
+                </div>
+                <div class="service">
+                    Databases: MySQL, MongoDB
+                </div>
+        </section>
+
+        <hr>
+        <section class="skill-section" id="skill-section">
+            <h1>SKILLS</h1>
+            <div class="box"></div>
+                <div class="skill">
+                    <button class="btn">JAVA</button>&nbsp; &nbsp;
+                    <button class="btn">DSA</button>&nbsp; &nbsp;
+                    <button class="btn">Android Development</button>
+                </div>
+                <div class="skill">
+                    <button class="btn">HTML</button>&nbsp; &nbsp;
+                    <button class="btn">CSS</button>&nbsp; &nbsp;
+                    <button class="btn">JavaScript</button>&nbsp; &nbsp;
+                    <button class="btn">Web Development</button>
+                </div>
+                <div class="skill">
+                    <button class="btn">MySQL</button>&nbsp; &nbsp;
+                    <button class="btn">MongoDB</button>
+                </div>
+        </section>
+
+        <hr>
+        <section class="project-section" id="project-section">
+            <h1>PROJECTS</h1>
+            <div class="box"></div>
+            <div class="project">
+                Food Wastage Management System with Research Paper: - A system to connect donors with recipients and minimize food waste. Build a Food Wastage Management System using HTML, CSS, JavaScript, PHP, and MySQL. Applied user registration, donation tracking, and real-time updates.
+            </div>
+            <div class="project">
+                Gym Fitness App: - An app to track workouts, set goals, and monitor user progress. Build a Gym Fitness App using Java. Executed features like exercise plans and performance analytics.
+            </div>
+            <div class="project">
+                Coffee Shop App (mini project): - A mini project for browsing menus and placing orders at a coffee shop. Developed a Coffee Shop App using Java in Android Studio. Implemented item selection, order customization, and a simple checkout.
+            </div>
+        </section>
+
+        <hr>
+        <section class="contact-section" id="contact-section">
+            <h1>CONTACTS</h1>
+            <div class="box"> </div>
+                <div class="contact">
+                    <img src="whatsapp.png" width="50px" height="47px" style="position-area: left;" alt="">
+                    Contact_No.: 7309847168 &nbsp; &nbsp; &nbsp;
+                    <img src="mail.png" width="50px" height="45px" style="position-area: center;" alt="">
+                    happysingh8577@gmail.com &nbsp; &nbsp; &nbsp;
+                    <img src="linkedin.png" width="50px" height="45px" style="position-area: right;" alt="">
+                     <a href="https://www.linkedin.com/in/happy-singh-98800b332/" target="blank">
+                         www.linkedin.com/in/happy-singh-98800b332
+                     </a>
+                    </div>  
+                    <div class="address">
+                    <img src="address.png" width="50px" height="45px" alt="">
+                    Jaunpur UP 222128.
+                    </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Happy's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#skill-section">Skill</a></li>
+                <li><a href="#project-section">Projects</a></li>
+                <li><a href="#contact-section">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169;.Happysportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'App developer', 'Frontend Developer', 'Backend Developer'],
+            loop: true,
+            typeSpeed: 100,
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</body>
+
+</html>
